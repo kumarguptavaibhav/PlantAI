@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class MyDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="infoDB";
-    private static final int DATABASE_ID=2;
+    private static final int DATABASE_ID=3;
     private static final String TABLE_CONTACT="contacts";
     private static final String KEY_NAME="name";
     private static final String KEY_EMAIL="email";
@@ -22,7 +22,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE " + TABLE_CONTACT + "(" + KEY_NAME + " TEXT, " + KEY_EMAIL + "TEXT PRIMARY KEY, " + KEY_PHONE_NO + "TEXT, " + KEY_PASSWORD + "TEXT " + ")");
+        db.execSQL("CREATE TABLE " + TABLE_CONTACT + "(" + KEY_NAME + " TEXT, " + KEY_EMAIL + " TEXT PRIMARY KEY, " + KEY_PHONE_NO + " TEXT, " + KEY_PASSWORD + " TEXT " + ")");
         //do not close database in oncreate method
         //SQLiteDatabase database = this.getWritableDatabase();
         //database.close();
