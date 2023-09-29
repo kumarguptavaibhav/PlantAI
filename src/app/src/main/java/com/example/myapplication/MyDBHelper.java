@@ -23,6 +23,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + TABLE_CONTACT + "(" + KEY_NAME + " TEXT, " + KEY_EMAIL + "TEXT PRIMARY KEY, " + KEY_PHONE_NO + "TEXT, " + KEY_PASSWORD + "TEXT " + ")");
+        //do not close database in oncreate method
         //SQLiteDatabase database = this.getWritableDatabase();
         //database.close();
     }
