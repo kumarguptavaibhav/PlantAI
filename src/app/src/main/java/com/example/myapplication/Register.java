@@ -9,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -66,7 +67,6 @@ public class Register extends AppCompatActivity {
 
         if(Name.isEmpty() || Email.isEmpty() || Contact_no.isEmpty() || Password.isEmpty()){
             Toast.makeText(Register.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
-            return;
         } else {
             myDBHelper.addInfo(Name, Email, Contact_no, Password);
             Toast.makeText(Register.this, "Details has been submitted.", Toast.LENGTH_SHORT).show();
@@ -74,11 +74,8 @@ public class Register extends AppCompatActivity {
             email.setText("");
             contact_no.setText("");
             pass.setText("");
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e){
-                Thread.currentThread().interrupt();
-            }
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
         }
     }
 }

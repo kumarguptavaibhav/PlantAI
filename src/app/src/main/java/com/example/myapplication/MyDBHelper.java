@@ -22,10 +22,9 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         db.execSQL("CREATE TABLE " + TABLE_CONTACT + "(" + KEY_NAME + " TEXT, " + KEY_EMAIL + "TEXT PRIMARY KEY, " + KEY_PHONE_NO + "TEXT, " + KEY_PASSWORD + "TEXT " + ")");
-        SQLiteDatabase database=this.getWritableDatabase();
-        database.close();
+        //SQLiteDatabase database = this.getWritableDatabase();
+        //database.close();
     }
 
     @Override
@@ -35,8 +34,8 @@ public class MyDBHelper extends SQLiteOpenHelper {
     }
 
     public void addInfo(String name, String email, String phone_no, String password){
-        SQLiteDatabase db=this.getWritableDatabase();
-        ContentValues values=new ContentValues();
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
         values.put(KEY_NAME, name);
         values.put(KEY_EMAIL, email);
         values.put(KEY_PHONE_NO, phone_no);
