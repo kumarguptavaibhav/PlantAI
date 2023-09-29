@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aqua">#00ffff</color>
+    <color name="aquamarine">#7fffd4</color>
+    <color name="azure">#f0ffff</color>
+    <color name="beige">#f5f5dc</color>
+    <color name="darkseagreen">#8fbc8f</color>
+    <color name="lightpurple">#ebe8fc</color>
+    <color name="purple">#957dad</color>
+    <color name="gajri">#d291bc</color>
+    <color name="green">#5d8700</color>
+    <color name="green1">#82b300</color>
+    <color name="green2">#a5d721</color>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/gradient2"
+        android:fontFamily="cursive"
+        android:paddingVertical="70dp"
+        android:text="PlantAI"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="70dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diseases"
+        android:id="@+id/disease"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/beige"
+        android:textColor="@color/darkseagreen"
+        android:layout_below="@+id/content"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solution"
+        android:id="@+id/solution"
+        android:layout_below="@+id/disease"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/beige"
+        android:textColor="@color/darkseagreen"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cultivation Tips"
+        android:id="@+id/cultivation"
+        android:layout_below="@+id/solution"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/beige"
+        android:textColor="@color/darkseagreen"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fertilizer Calculator"
+        android:id="@+id/calculator"
+        android:layout_below="@+id/cultivation"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/beige"
+        android:textColor="@color/darkseagreen"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/signout"
+        android:layout_below="@+id/calculator"
+        android:layout_marginHorizontal="80dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/beige"
+        android:textColor="@color/darkseagreen"
+        />
+
+
+
+
+</RelativeLayout>

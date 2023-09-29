@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Calculator">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Nitrogen in Kg"
+        android:id="@+id/nitrogen"
+        android:inputType="number"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="80dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phosphorus in Kg"
+        android:id="@+id/phosphorus"
+        android:layout_below="@id/nitrogen"
+        android:inputType="number"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pottas in Kg"
+        android:id="@+id/pottas"
+        android:layout_below="@id/phosphorus"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="80dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/urea"
+        android:text="Urea"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_below="@id/pottas"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="80dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dap"
+        android:text="DAP"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_below="@id/urea"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="100dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mop"
+        android:text="MOP"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_below="@id/dap"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@id/mop"
+        android:inputType="number"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="0.00"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Result Comes in Kilo-Gram"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+</RelativeLayout>
