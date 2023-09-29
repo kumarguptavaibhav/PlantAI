@@ -2,14 +2,14 @@ package com.example.myapplication;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import androidx.annotation.Nullable;
+import android.util.Log;
 
 public class MyDBHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="infoDB";
-    private static final int DATABASE_ID=1;
+    private static final int DATABASE_ID=2;
     private static final String TABLE_CONTACT="contacts";
     private static final String KEY_NAME="name";
     private static final String KEY_EMAIL="email";
@@ -43,5 +43,28 @@ public class MyDBHelper extends SQLiteOpenHelper {
 
         db.insert(TABLE_CONTACT, null, values);
         db.close();
+    }
+
+    public boolean checkInfo(String email, String password) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Boolean check = false;
+
+        Log.d("uday", "beforeQuery()");
+        //Checking for Correct username and password
+        Cursor cursor = db.query(TABLE_CONTACT, new String[] { "*" }, KEY_EMAIL + "=?",
+                new String[] { email } , null, null, null, null);
+
+
+        Log.d("uday", "afterQuery()");
+
+        if (cursor != null && cursor.moveToFirst()) {
+            String emailDb = cursor.getString(cursor.getColumnIndex(KEY_EMAIL) >=0 ? cursor.getColumnIndex(KEY_EMAIL) : 0 );
+            String passDb = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD) > 0 ? cursor.getColumnIndex(KEY_PASSWORD) : 1);
+
+            check = (email.equals(emailDb) && password.equals(passDb));
+        }
+        cursor.close();
+
+        return check;
     }
 }

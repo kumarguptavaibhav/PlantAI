@@ -52,13 +52,10 @@ public class Home extends AppCompatActivity {
         button6=findViewById(R.id.disease);
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                openActivity7();
-            }
+            public void onClick(View v) { openActivity7(); }
         });
-
-
     }
+
     public void openActivity5(){
         Intent intent=new Intent(this, MainActivity.class);
         startActivity(intent);
