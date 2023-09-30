@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.core.view.WindowCompat;
 import androidx.navigation.NavController;
@@ -58,6 +59,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void openActivity5(){
+        Toast.makeText(getApplicationContext(),"Sign Out Successfully",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this, MainActivity.class);
         startActivity(intent);
     }
