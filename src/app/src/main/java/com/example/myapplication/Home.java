@@ -54,6 +54,7 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) { openActivity7(); }
         });
+
     }
 
     public void openActivity5(){
