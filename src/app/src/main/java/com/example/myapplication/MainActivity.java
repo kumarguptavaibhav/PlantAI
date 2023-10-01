@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button2;
     private EditText user;
     private EditText password;
+    private long pressedTime;
     MyDBHelper myDBHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
         } else {
             if (myDBHelper.checkInfo(userStr,passStr)) {
-                Toast.makeText(MainActivity.this, "Login Succesfull", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 openActivity3();
             } else {
-                Toast.makeText(MainActivity.this, "Invalid Credentails !!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Invalid Credentials !!", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -64,5 +65,17 @@ public class MainActivity extends AppCompatActivity {
     public void openActivity3(){
         Intent intent=new Intent(this, Home.class);
         startActivity(intent);
+    }
+
+    //onBackPressed function used to back the activity
+    public void onBackPressed() {
+
+        if (pressedTime + 2000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            finish();
+        } else {
+            Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT).show();
+        }
+        pressedTime = System.currentTimeMillis();
     }
 }

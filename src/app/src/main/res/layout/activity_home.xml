@@ -8,6 +8,18 @@
     tools:context=".Home">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/nav"
+        android:text=""
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:textSize="25dp"
+        android:textAppearance="@color/black"
+        android:background="@color/blue400"
+
+        />
+    <TextView
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="250dp"

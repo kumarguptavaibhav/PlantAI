@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.core.view.WindowCompat;
@@ -33,6 +34,7 @@ public class Home extends AppCompatActivity {
 
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         button4=findViewById(R.id.signout);
         button4.setOnClickListener(new View.OnClickListener() {

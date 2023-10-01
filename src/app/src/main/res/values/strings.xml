@@ -49,4 +49,5 @@
     <string name="title_activity_disease">Disease</string>
     <string name="create_table">CREATE TABLE</string>
     <string name="title_activity_solution">Solution</string>
+    <string name="title_activity_cultivation">cultivation</string>
 </resources>
