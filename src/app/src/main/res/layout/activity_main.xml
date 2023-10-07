@@ -41,7 +41,8 @@
         android:hint="Enter your Email"
         android:layout_below="@+id/username"
         android:layout_marginHorizontal="30dp"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress"
+        android:textAllCaps="false"/>
     <TextView
         android:id="@+id/password"
         android:layout_width="match_parent"
@@ -60,7 +61,8 @@
         android:hint="Enter your Password"
         android:layout_below="@+id/password"
         android:layout_marginHorizontal="30dp"
-        android:inputType="textVisiblePassword"/>
+        android:inputType="textVisiblePassword"
+        android:textAllCaps="false"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

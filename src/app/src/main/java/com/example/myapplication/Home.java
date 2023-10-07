@@ -24,6 +24,9 @@ public class Home extends AppCompatActivity {
     private Button button4;
     private Button button5;
     private Button button6;
+    private Button buttoncul;
+    TextView name;
+    TextView nameTV;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityHomeBinding binding;
@@ -34,6 +37,8 @@ public class Home extends AppCompatActivity {
 
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        nameTV=(TextView) findViewById(R.id.nav);
 
 
         button4=findViewById(R.id.signout);
@@ -58,6 +63,14 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) { openActivity7(); }
         });
 
+        buttoncul=findViewById(R.id.cultivation);
+        buttoncul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity8();
+            }
+        });
+
     }
 
     public void openActivity5(){
@@ -73,6 +86,11 @@ public class Home extends AppCompatActivity {
 
     public void openActivity7(){
         Intent intent=new Intent(this, Disease.class);
+        startActivity(intent);
+    }
+
+    public void openActivity8(){
+        Intent intent=new Intent(this, Cultivation.class);
         startActivity(intent);
     }
 }

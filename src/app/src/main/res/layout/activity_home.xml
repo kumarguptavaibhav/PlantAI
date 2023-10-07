@@ -16,7 +16,7 @@
         android:textStyle="normal"
         android:textSize="25dp"
         android:textAppearance="@color/black"
-        android:background="@color/blue400"
+        android:background="@color/teal800"
 
         />
     <TextView

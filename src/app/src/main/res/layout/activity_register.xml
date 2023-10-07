@@ -22,6 +22,7 @@
         android:layout_marginTop="50dp"
         android:inputType="textEmailAddress"
         android:layout_marginHorizontal="25dp"
+        android:textAllCaps="false"
         />
     <EditText
         android:layout_width="match_parent"

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:fitsSystemWindows="true"
+    tools:context=".Cultivation">
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preparation of Soil"
+        android:textAlignment="center"
+        android:id="@+id/soil"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="160dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sowing"
+        android:textAlignment="center"
+        android:id="@+id/sowing"
+        android:layout_below="@+id/soil"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manuring"
+        android:textAlignment="center"
+        android:id="@+id/manuring"
+        android:layout_below="@+id/sowing"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weeding"
+        android:textAlignment="center"
+        android:id="@+id/weeding"
+        android:layout_below="@+id/manuring"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harvesting"
+        android:textAlignment="center"
+        android:id="@+id/harvesting"
+        android:layout_below="@+id/weeding"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Storage"
+        android:textAlignment="center"
+        android:id="@+id/storage"
+        android:layout_below="@+id/harvesting"
+        android:textColor="@color/darkseagreen"
+        android:backgroundTint="@color/beige"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:textSize="30dp"/>
+
+
+
+</RelativeLayout>

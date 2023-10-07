@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph13"
+    app:startDestination="@id/First6Fragment">
+
+    <fragment
+        android:id="@+id/First6Fragment"
+        android:name="com.example.myapplication.First6Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first6">
+
+        <action
+            android:id="@+id/action_First6Fragment_to_Second6Fragment"
+            app:destination="@id/Second6Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second6Fragment"
+        android:name="com.example.myapplication.Second6Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second6">
+
+        <action
+            android:id="@+id/action_Second6Fragment_to_First6Fragment"
+            app:destination="@id/First6Fragment" />
+    </fragment>
+</navigation>
