@@ -25,6 +25,7 @@ public class Home extends AppCompatActivity {
     private Button button5;
     private Button button6;
     private Button buttoncul;
+    private Button buttonsol;
     TextView name;
     TextView nameTV;
 
@@ -71,6 +72,12 @@ public class Home extends AppCompatActivity {
             }
         });
 
+        buttonsol=findViewById(R.id.solution);
+        buttonsol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openActivity9(); }
+        });
+
     }
 
     public void openActivity5(){
@@ -91,6 +98,11 @@ public class Home extends AppCompatActivity {
 
     public void openActivity8(){
         Intent intent=new Intent(this, Cultivation.class);
+        startActivity(intent);
+    }
+
+    public void openActivity9(){
+        Intent intent=new Intent(this, Solution.class);
         startActivity(intent);
     }
 }
