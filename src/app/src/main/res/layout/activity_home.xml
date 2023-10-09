@@ -7,6 +7,7 @@
     android:fitsSystemWindows="true"
     tools:context=".Home">
 
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -17,7 +18,6 @@
         android:textSize="25dp"
         android:textAppearance="@color/black"
         android:background="@color/teal800"
-
         />
     <TextView
         android:id="@+id/content"
