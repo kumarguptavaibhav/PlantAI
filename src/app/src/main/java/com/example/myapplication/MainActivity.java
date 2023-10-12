@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,10 +22,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         user = findViewById(R.id.user);
         password = findViewById(R.id.pass);
-
         myDBHelper = new MyDBHelper(this);
+
+        SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
+        Boolean check = pref.getBoolean("flag", false);
+        Intent iNext;
+        if(check){ //user logged in
+            iNext = new Intent(MainActivity.this, Home.class);
+            startActivity(iNext);
+        }
+        else{ //user logged out
+            iNext = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(iNext);
+        }
 
         button1 = findViewById(R.id.footer);
         button1.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +78,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivity3(){
-        Intent intent=new Intent(this, Home.class);
+
+
+        SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("flag", true);
+        editor.apply();
+
+
+
+        Intent intent=new Intent(MainActivity.this, Home.class);
         startActivity(intent);
     }
 

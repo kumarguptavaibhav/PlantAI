@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -81,6 +82,10 @@ public class Home extends AppCompatActivity {
     }
 
     public void openActivity5(){
+        SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.putBoolean("flag", false);
+        editor.apply();
         Toast.makeText(getApplicationContext(),"Sign Out Successfully",Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this, MainActivity.class);
         startActivity(intent);
