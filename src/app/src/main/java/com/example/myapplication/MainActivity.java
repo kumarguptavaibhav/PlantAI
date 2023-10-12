@@ -31,13 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
         Boolean check = pref.getBoolean("flag", false);
-        Intent iNext;
         if(check){ //user logged in
+            Intent iNext;
             iNext = new Intent(MainActivity.this, Home.class);
-            startActivity(iNext);
-        }
-        else{ //user logged out
-            iNext = new Intent(MainActivity.this, MainActivity.class);
             startActivity(iNext);
         }
 
@@ -78,8 +74,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivity3(){
-
-
         SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean("flag", true);
