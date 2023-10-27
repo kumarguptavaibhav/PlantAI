@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/green"
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     tools:context=".Cultivation">
 
@@ -21,7 +21,10 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="160dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"
+        />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +36,9 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +50,9 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -57,7 +64,9 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +78,9 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,8 +92,8 @@
         android:backgroundTint="@color/beige"
         android:layout_marginTop="30dp"
         android:layout_marginHorizontal="40dp"
-        android:textSize="30dp"/>
-
-
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:fontFamily="cursive"/>
 
 </RelativeLayout>

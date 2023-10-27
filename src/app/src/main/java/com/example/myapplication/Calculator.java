@@ -52,6 +52,9 @@ public class Calculator extends AppCompatActivity {
                     double result= (opr1*100)/46;
                     txtresult.setText(Double.toString(result));
                 }
+                else{
+                    txtresult.setText("0.00");
+                }
             }
         });
 
@@ -63,6 +66,9 @@ public class Calculator extends AppCompatActivity {
                     double result= (opr2*100)/16;
                     txtresult.setText(Double.toString(result));
                 }
+                else{
+                    txtresult.setText("0.00");
+                }
             }
         });
 
@@ -73,6 +79,9 @@ public class Calculator extends AppCompatActivity {
                     double opr3=Double.parseDouble(et3.getText().toString());
                     double result= (opr3*100)/60;
                     txtresult.setText(Double.toString(result));
+                }
+                else{
+                    txtresult.setText("0.00");
                 }
             }
         });

@@ -61,6 +61,14 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Please enter all the data..", Toast.LENGTH_SHORT).show();
         } else {
             if (myDBHelper.checkInfo(userStr,passStr)) {
+
+
+                SharedPreferences sp = getSharedPreferences("entry", MODE_PRIVATE);
+                SharedPreferences.Editor editor2 = sp.edit();
+                editor2.putString("username", userStr);
+                editor2.apply();
+
+
                 Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                 openActivity3();
             } else {
@@ -75,11 +83,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openActivity3(){
         SharedPreferences pref = getSharedPreferences("login",MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-        editor.putBoolean("flag", true);
-        editor.apply();
-
-
+        SharedPreferences.Editor editor1 = pref.edit();
+        editor1.putBoolean("flag", true);
+        editor1.apply();
 
         Intent intent=new Intent(MainActivity.this, Home.class);
         startActivity(intent);

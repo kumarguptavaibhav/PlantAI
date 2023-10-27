@@ -3,21 +3,13 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.core.view.WindowCompat;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.myapplication.databinding.ActivityHomeBinding;
 
@@ -27,8 +19,8 @@ public class Home extends AppCompatActivity {
     private Button button6;
     private Button buttoncul;
     private Button buttonsol;
+    private Button buttonwhe;
     TextView name;
-    TextView nameTV;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityHomeBinding binding;
@@ -40,8 +32,11 @@ public class Home extends AppCompatActivity {
         binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        nameTV=(TextView) findViewById(R.id.nav);
+        name = findViewById(R.id.nav);
 
+        SharedPreferences sp = getSharedPreferences("entry", MODE_PRIVATE);
+        String userName = sp.getString("username", "");
+        name.setText(userName);
 
         button4=findViewById(R.id.signout);
         button4.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +74,12 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) { openActivity9(); }
         });
 
+        buttonwhe = findViewById(R.id.whether);
+        buttonwhe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { openActivity10(); }
+        });
+
     }
 
     public void openActivity5(){
@@ -108,6 +109,11 @@ public class Home extends AppCompatActivity {
 
     public void openActivity9(){
         Intent intent=new Intent(this, Solution.class);
+        startActivity(intent);
+    }
+
+    public void openActivity10(){
+        Intent intent = new Intent(this, Wheather.class);
         startActivity(intent);
     }
 }

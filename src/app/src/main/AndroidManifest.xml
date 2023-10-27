@@ -21,6 +21,16 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Wheather"
+            android:exported="false"
+            android:label="@string/title_activity_wheather"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".Whether"
+            android:exported="false"
+            android:label="@string/title_activity_whether"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
             android:name=".Welcome"
             android:exported="false"
             android:label="@string/title_activity_welcome"

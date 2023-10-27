@@ -51,4 +51,6 @@
     <string name="title_activity_solution">Solution</string>
     <string name="title_activity_cultivation">cultivation</string>
     <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_whether">Whether</string>
+    <string name="title_activity_wheather">Wheather</string>
 </resources>
