@@ -13,13 +13,14 @@
         android:layout_height="wrap_content"
         android:hint="Enter City"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:inputType="text"/>
 
     <Button
         android:id="@+id/fetchWeatherButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fetch Weather"
+        android:text="Crop Recommendation"
         android:layout_below="@id/cityEditText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
@@ -32,13 +33,6 @@
         android:layout_below="@id/fetchWeatherButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"/>
-    <TextView
-        android:id="@+id/temp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_below="@id/recommendationTextView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"/>
+
 
 </RelativeLayout>

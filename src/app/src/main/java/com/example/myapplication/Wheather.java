@@ -28,7 +28,6 @@ public class Wheather extends AppCompatActivity {
     private EditText locationEditText;
     private Button fetchWeatherButton;
     private TextView recommendationTextView;
-    private TextView weatherTemperature;
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityWheatherBinding binding;
@@ -43,7 +42,6 @@ public class Wheather extends AppCompatActivity {
         locationEditText = findViewById(R.id.cityEditText);
         fetchWeatherButton = findViewById(R.id.fetchWeatherButton);
         recommendationTextView = findViewById(R.id.recommendationTextView);
-        weatherTemperature = findViewById(R.id.temp);
 
         fetchWeatherButton.setOnClickListener(new View.OnClickListener() {
             @Override
