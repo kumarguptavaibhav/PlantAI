@@ -4,35 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightpurple"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/SignIn"
+    <ImageView
+        android:id="@+id/Img"
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
         android:layout_height="250dp"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="25dp"
-        android:background="@drawable/gradient"
-        android:fontFamily="cursive"
-        android:paddingVertical="70dp"
-        android:text="Sign In"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="85sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_main1" />
 
     <TextView
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/SignIn"
-        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Img"
+        android:layout_marginTop="50dp"
         android:text="Username"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginHorizontal="35dp"
+        android:textColor="@color/black"
         />
     <EditText
         android:layout_width="match_parent"
@@ -53,6 +45,7 @@
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_marginHorizontal="35dp"
+        android:textColor="@color/black"
         />
     <EditText
         android:layout_width="match_parent"
@@ -73,16 +66,24 @@
         android:text="Sign In"
         android:textSize="30dp"
         android:textAlignment="center"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/register"
         android:layout_below="@id/login"
-        android:text="No Account Yet? Create an Account"
+        android:text="Reset Password"
         android:textAlignment="center"
         android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginHorizontal="100dp"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,6 +95,7 @@
         android:textAlignment="center"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         />
 </RelativeLayout>

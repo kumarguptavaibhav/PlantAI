@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/First7Fragment"
-        android:name="com.example.myapplication.First7Fragment"
+        android:name="com.example.PlantAI.First7Fragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first7">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/Second7Fragment"
-        android:name="com.example.myapplication.Second7Fragment"
+        android:name="com.example.PlantAI.Second7Fragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_second7">
 

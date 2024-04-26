@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -20,6 +22,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".ForgotPass"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_pass"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".contact_form"
+            android:exported="false"
+            android:label="@string/title_activity_contact_form"
+            android:theme="@style/Theme.MyApplication" />
         <activity
             android:name=".Wheather"
             android:exported="false"

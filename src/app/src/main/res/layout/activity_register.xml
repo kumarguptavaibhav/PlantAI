@@ -2,24 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightpurple">
+    android:background="@color/white">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Name"
-        android:id="@+id/NAME"
-        android:layout_marginTop="150dp"
-        android:inputType="text"
-        android:layout_marginHorizontal="25dp"
-        />
+
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
         android:id="@+id/EMAIL"
-        android:layout_below="@id/NAME"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:inputType="textEmailAddress"
         android:layout_marginHorizontal="25dp"
         android:textAllCaps="false"
@@ -27,19 +19,9 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contact Info"
-        android:id="@+id/CONTACT"
-        android:layout_below="@+id/EMAIL"
-        android:layout_marginTop="50dp"
-        android:inputType="phone"
-        android:layout_marginHorizontal="25dp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="Password"
         android:id="@+id/PASSWORD"
-        android:layout_below="@+id/CONTACT"
+        android:layout_below="@+id/EMAIL"
         android:layout_marginTop="50dp"
         android:inputType="textVisiblePassword"
         android:layout_marginHorizontal="25dp"
@@ -55,6 +37,8 @@
         android:textSize="30dp"
         android:textAlignment="center"
         android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
         />
 
 </RelativeLayout>

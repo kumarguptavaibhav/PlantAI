@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "441671749724",
+    "project_id": "plantai-380cd",
+    "storage_bucket": "plantai-380cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441671749724:android:b516effd15788643711699",
+        "android_client_info": {
+          "package_name": "com.example.PlantAI"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtZ6oQHfTZVeSsf14Zq86lXY7ADlgcIPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

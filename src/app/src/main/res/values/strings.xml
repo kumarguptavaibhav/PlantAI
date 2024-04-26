@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">PlantAI</string>
     <string name="title_activity_main2">MainActivity2</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -53,4 +53,6 @@
     <string name="title_activity_welcome">Welcome</string>
     <string name="title_activity_whether">Whether</string>
     <string name="title_activity_wheather">Wheather</string>
+    <string name="title_activity_contact_form">contact_form</string>
+    <string name="title_activity_forgot_pass">ForgotPass</string>
 </resources>
